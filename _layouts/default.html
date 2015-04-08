@@ -32,6 +32,17 @@
       </section>
     </div>
 
+    <div class="container">
+        <h2>Function documentation</h2>
+        <ul>
+    {% for page in site.pages %}
+      {% if page.url != '/index.html' %}
+        <li><a href="/octokit.sh/{{ page.url }}">{{ page.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+        </ul>
+    </div>
+
     <script type="text/javascript">
         var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

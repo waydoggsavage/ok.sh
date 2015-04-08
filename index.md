@@ -65,11 +65,3 @@ Flag | Description
 help, show_scopes, org_repos, org_teams, list_repos, create_repo, delete_repo, 
 list_releases, release, create_release, delete_release, release_assets, 
 upload_asset
-
-### Full documentation for each command
-
-{% for page in site.pages %}
-  {% if page.url == '/path/to/page.html' %}
-[{{ page.title }}]({{ page.url }})
-  {% endif %}
-{% endfor %}

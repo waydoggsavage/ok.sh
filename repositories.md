@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Repository Functions
 ---
 
 ### org_repos()
